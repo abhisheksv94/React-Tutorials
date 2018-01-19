@@ -1,0 +1,26 @@
+.container{display:flex;flex-wrap:wrap}
+
+.button-primary{
+    border:none;
+    color:#FFF;
+    font:13px/1.4 Roboto,
+    sans-serif;
+    padding:8px 12px
+}
+.commentContainer button{margin-right:6px}
+.commentContainer{
+    background:#eee;border:1px solid #111111;
+    display: inline-block; margin:8px;padding:8px;
+    width: 700px}
+
+#container{margin:10px}
+#container button.create{margin-bottom:8px}
+.board{
+    background-color: #111111;height:100%;padding:20px;margin: 20px;
+    display: flex;width: auto }
+#container .board .commentContainer{
+    background: #555555;border:20px solid #111111;
+    display: grid; margin:8px;padding:8px;}
+#container .board .commentContainer .comment{font-size:1.1em;font-weight:500;margin-bottom:50px}
+#container .board .commentContainer button{margin-right:6px}
+#container .board .commentContainer textarea{display:block;margin-bottom:10px}
