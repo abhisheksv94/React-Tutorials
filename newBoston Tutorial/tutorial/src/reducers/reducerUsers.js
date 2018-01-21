@@ -1,6 +1,3 @@
-import React,{Component} from 'react';
-import ReactDOM from 'react-dom';
-
 export default function () {
     return[
         {
@@ -26,6 +23,14 @@ export default function () {
             age: 24,
             description: "Madi likes her dog but it is really annoying.",
             thumbnail: "http://i.imgur.com/4EMtxHB.png"
+        },
+        {
+            id:4,
+            first:'Abhishek',
+            last:'Shrinivasan',
+            age:23,
+            description:'I code like a mofo',
+            thumbnail:"http://icons.iconarchive.com/icons/wackypixel/dogs-n-puppies/128/Puppy-10-icon.png"
         }
     ]
 }

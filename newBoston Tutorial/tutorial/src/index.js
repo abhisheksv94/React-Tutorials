@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
 import './index.css';
@@ -6,6 +6,8 @@ import registerServiceWorker from './registerServiceWorker';
 import allReducers from './reducers';
 import {Provider} from 'react-redux';
 import App from './components/App';
+
+
 const store=createStore(allReducers);
 
 ReactDOM.render(
