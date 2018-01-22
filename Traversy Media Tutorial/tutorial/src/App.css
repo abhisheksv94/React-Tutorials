@@ -1,0 +1,10 @@
+.App{
+  margin: 20px;
+}
+.btn-danger{
+    text-align: end;
+    font-size: 12px;
+
+    padding-top: 0px;
+    padding-bottom: 1px;
+}
