@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+.person{
+  font-size: 20px;
+    width: 60%;
+    height: 40%;
+    border: 1px solid #eee;
+    box-shadow: 1px 3px #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    text-align: center;
+}
