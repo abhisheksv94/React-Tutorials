@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import Classes from './App.css';
 import Person from './Person/Person';
 
 class App extends Component {
@@ -25,11 +25,14 @@ class App extends Component {
             }
           };
       const style={
+          align:'center',
         backgroundColor:'green',
         color:'white',
         font:'inherit',
         border:'1px solid blue',
-        margin:'10px',
+        marginTop:'10px',
+        marginLeft:'auto',
+        marginRight:'auto',
         padding:'8px',
         cursor:'pointer',
         ':hover':{
@@ -38,7 +41,7 @@ class App extends Component {
         }
       };
     return (
-        <div className="App">
+        <div className={Classes.App}>
             <h1>Hi, I'm a React App </h1>
             {this.state.name.map((name,index) => <Person key={index} name={name} age={Math.floor(Math.random()*30)}/>)}
             <input  placeholder={'Enter a Name'} onKeyPress={keyPress}/><br/>
