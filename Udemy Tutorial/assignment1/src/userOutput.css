@@ -1,0 +1,10 @@
+.output{
+    font-size: 20px;
+    width: 60%;
+    height: 30%;
+    border: 1px solid #eee;
+    box-shadow: 1px 2px #ccc;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+}
