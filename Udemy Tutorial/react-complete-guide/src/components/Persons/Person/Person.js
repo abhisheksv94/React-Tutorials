@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../App.css';
+import classes from '../../../containers/App.css';
 const person = (props) => {
     let child;
     if(props.children){
