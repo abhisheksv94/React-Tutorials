@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classes from './App.css';
 import Persons from '../components/Persons/Persons';
+import Cockpit from '../components/Cockpit/Cockpit';
 class App extends Component {
     constructor(){
         super();
@@ -33,10 +34,10 @@ class App extends Component {
       };
     return (
         <div className={classes.App}>
-            <h1>Hi, I'm a React App </h1>
-            <Persons persons={this.state.name}/>
+            <Cockpit button={this.state.btnClass} clicked={handleClick}>
+                <Persons persons={this.state.name}/>
+            </Cockpit>
             <input  placeholder={'Enter a Name'} onKeyPress={keyPress}/><br/>
-            <button className={this.state.btnClass} onClick={handleClick}>Just a button!</button>
         </div>
 
     );
