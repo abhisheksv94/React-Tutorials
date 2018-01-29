@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Classes from './App.css';
+import classes from './App.css';
 import Person from './Person/Person';
 
 class App extends Component {
     constructor(){
         super();
         this.state={
-            name:['Abhishek','Akhilesh','Radha',"Vasan"]
+            name:['Abhishek','Akhilesh','Radha',"Vasan"],
+            btnClass:undefined
         }
     }
 
@@ -24,28 +25,19 @@ class App extends Component {
                 }
             }
           };
-      const style={
-          align:'center',
-        backgroundColor:'green',
-        color:'white',
-        font:'inherit',
-        border:'1px solid blue',
-        marginTop:'10px',
-        marginLeft:'auto',
-        marginRight:'auto',
-        padding:'8px',
-        cursor:'pointer',
-        ':hover':{
-            backgroundColor:'lightgreen',
-            color:'black'
-        }
+      const handleClick=()=>{
+          const buttonClass=this.state.btnClass;
+          if(buttonClass===undefined)
+             this.setState({btnClass:classes.Red});
+          else
+              this.setState({btnClass:undefined});
       };
     return (
-        <div className={Classes.App}>
+        <div className={classes.App}>
             <h1>Hi, I'm a React App </h1>
             {this.state.name.map((name,index) => <Person key={index} name={name} age={Math.floor(Math.random()*30)}/>)}
             <input  placeholder={'Enter a Name'} onKeyPress={keyPress}/><br/>
-            <button style={style}>Just a button!</button>
+            <button className={this.state.btnClass} onClick={handleClick}>Just a button!</button>
         </div>
 
     );
