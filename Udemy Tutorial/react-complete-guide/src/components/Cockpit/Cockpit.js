@@ -1,13 +1,14 @@
 import React from 'react';
-
+import Aux from 'react-aux';
 
 
 
 const cockpit=(props)=>
-    <div>
+    <Aux>
         <h1>Hi, I'm a React App </h1>
-        <button className={props.button} onClick={props.clicked}>Just a button!</button>
+        <button className={props.button} onClick={props.clicked}>Click me to see content!</button>
         {props.button===undefined?null:props.children}
-    </div>;
+        <br/>
+    </Aux>;
 
 export default cockpit;
