@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Aux from '../../hoc/aux';
+import Aux from '../../hoc/aux/aux';
 import Burger from '../../components/Burger/burger';
 import BuildControls from '../../components/Burger/buildcontrols/buildcontrols';
 import Modal from '../../components/UI/Modal/Modal';
@@ -61,7 +61,7 @@ export default class BurgerBuilder extends Component{
         }
     }
     orderHandler(){
-        this.setState({ordered:true},()=>console.log('ordered: \t'+this.state.ordered));
+        this.setState({ordered:true});
     }
     backgroundClick(){
         this.setState({ordered:false});
@@ -79,7 +79,7 @@ export default class BurgerBuilder extends Component{
         return(
             <Aux>
                 <Modal show={this.state.ordered} backgroundClick={()=>this.backgroundClick()}>
-                    <OrderSummary ingredients={this.state.ingredients} clicked={()=>this.buttonClicked()} price={this.state.totalPrice}/>
+                    <OrderSummary show={this.state.ordered} ingredients={this.state.ingredients} clicked={()=>this.buttonClicked()} price={this.state.totalPrice}/>
                 </Modal><br/>
                 <Burger ingredients={this.state.ingredients} /><br/>
                 <BuildControls addIngredient={this.addIngredient.bind(this)} removeIngredient={this.removeIngredient.bind(this)}

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './13-build-control-addition.css';
+import classes from './buildcontrol.css';
 
 const buildcontrol=(props)=>{
     return(
