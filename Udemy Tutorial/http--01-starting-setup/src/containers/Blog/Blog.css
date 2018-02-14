@@ -5,3 +5,16 @@
     width: 80%;
     margin: auto;
 }
+.Blog{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 20px;
+    color: red;
+    transition: font-size 0.7s ease-out;
+}
+
+.Blog:hover{
+    font-size: 50px;
+    transition: font-size 0.7s ease-out;
+}
